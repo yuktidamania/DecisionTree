@@ -4,10 +4,10 @@ import pandas as pd
 import pickle
 
 
-my_dtr_hyper = pickle.load(open("decision_tree_model.pkl","wb"))
+my_dtr = pickle.load(open("decision_tree_model.pkl","wb"))
 
 def predict(data):
-    return my_dtr_hyper.predict(data)
+    return my_dtr.predict(data)
 
 st.title("Create a model that will help me predict relative humidity at 3 pm")
 st.markdown("This model predicts humidity at 3pm")
